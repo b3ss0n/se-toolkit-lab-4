@@ -54,15 +54,23 @@ Read the following sections:
 
 ### View the file `.env.secret`
 
+> [!NOTE]
+> The `.env.secret` file was added to [`.gitignore`](../../../.gitignore) because you may specify there
+> [secrets](../../appendix/environments.md#secrets) such as the address of your VM.
+
+View the file using one of the following methods.
+
+Method 1:
+
 1. [Run using the `Terminal`](../../appendix/vs-code.md#run-a-command-using-the-terminal):
 
    ```terminal
    cat .env.secret
    ```
 
-> [!NOTE]
-> The `.env.secret` file was added to [`.gitignore`](../../../.gitignore) because you may specify there
-> [secrets](../../appendix/environments.md#secrets) such as the address of your VM.
+Method 2:
+
+1. [Open the file using the `Command Palette`](../../appendix/vs-code.md#open-a-file-using-the-command-palette): [`.env.secret`](../../../.env.no-docker.example).
 
 ### Run the web server using `uv` and `poe`
 
