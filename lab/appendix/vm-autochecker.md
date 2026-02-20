@@ -50,25 +50,24 @@ The `autochecker` user is a restricted account for the autochecker bot. It has n
 
 Copy the `authorized_keys` file from the current user to another user so they can log in with the same SSH key.
 
-1. Complete the following steps:
-   1. Create the `.ssh` directory:
+1. Create the `.ssh` directory:
 
-      ```terminal
-      mkdir -p /home/<username>/.ssh
-      ```
+   ```terminal
+   mkdir -p /home/<username>/.ssh
+   ```
 
-   2. Copy the authorized keys:
+2. Copy the authorized keys:
 
-      ```terminal
-      cp ~/.ssh/authorized_keys /home/<username>/.ssh/authorized_keys
-      ```
+   ```terminal
+   cp ~/.ssh/authorized_keys /home/<username>/.ssh/authorized_keys
+   ```
 
-   3. Set the correct ownership and permissions:
+3. Set the correct ownership and permissions:
 
-      ```terminal
-      chown -R <username>:<username> /home/<username>/.ssh
-      chmod 700 /home/<username>/.ssh
-      chmod 600 /home/<username>/.ssh/authorized_keys
-      ```
+   ```terminal
+   chown -R <username>:<username> /home/<username>/.ssh
+   chmod 700 /home/<username>/.ssh
+   chmod 600 /home/<username>/.ssh/authorized_keys
+   ```
 
 Replace `<username>` with the name of the target user.
