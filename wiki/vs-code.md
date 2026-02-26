@@ -62,6 +62,7 @@
   - [Rename a symbol](#rename-a-symbol)
 - [Set up `VS Code`](#set-up-vs-code)
   - [(`Windows` only) Set up running `VS Code` in `WSL`](#windows-only-set-up-running-vs-code-in-wsl)
+  - [(`macOS` only) Add `VS Code` to `PATH`](#macos-only-add-vs-code-to-path)
 
 > [!IMPORTANT]
 > The first [keyboard shortcut](#keyboard-shortcuts) is always for `Linux`.
@@ -629,3 +630,24 @@ Steps:
 
 5. Open `VS Code` again.
 
+### (`macOS` only) Add `VS Code` to `PATH`
+
+1. [Add `VS Code` to `PATH`](https://code.visualstudio.com/docs/setup/mac#_configure-the-path-with-vs-code).
+
+   See [`PATH` environment variable](./environments.md#path-environment-variable).
+2. [Open a new `VS Code Terminal`](#open-a-new-vs-code-terminal).
+3. Check that the `code` command is available in the `VS Code Terminal`:
+
+    [Run using the `VS Code Terminal`](#run-a-command-using-the-vs-code-terminal):
+
+    ```terminal
+    code --version
+    ```
+
+    The output should be similar to this text:
+
+    ```terminal
+    1.109.0
+    bdd88df003631aaa0bcbe057cb0a940b80a476fa
+    x64
+    ```
